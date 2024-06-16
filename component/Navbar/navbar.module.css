@@ -1,0 +1,116 @@
+.navbarCont {
+    width: 100%;
+    /* height: 6rem; */
+
+    font-size: 1.6rem;
+    padding: 1.2rem 2.2rem;
+    background-color: #232a37;
+}
+
+.menuBtn {
+    /* flex: 1; */
+
+
+}
+
+.menuBtn>div {
+    border-radius: 0.8rem;
+    padding: 1.2rem;
+    background-color: #d8d8d8;
+
+
+
+}
+
+.brandName {
+    /* flex: 1; */
+    font-size: 2.6rem;
+    color : white;
+    font-style: italic;
+    font-weight: 600;
+
+
+    text-transform: uppercase;
+}
+
+.searchBarCont {
+    flex: 7;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 4rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+
+
+}
+.searchBarInput{
+    /* padding: 1.2rem; */
+    flex: 1;
+    border: none;
+    outline: none;
+    height: 100%;
+    background-color: #d8d8d8;
+    display: block;
+    width: 100% ;
+    border: none;
+    background-color:  white;
+    padding: 0.7rem 2rem;
+
+
+}
+.searchIcon{
+    padding: 1.2rem;
+    /* height: 100%; */
+    background-color: #d8d8d8;
+    color: black;
+    font-size: 1.75rem;
+    font-weight: 600;
+
+   
+}
+
+
+.loginBtn,
+.cartBtn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2.5rem;
+
+padding: 0 3rem;
+
+}
+.loginBtn{
+    border-right: 1px solid ;
+}
+.loginBtn > span{
+    font-size: 0.65em;
+}
+.cartBtn > span{
+    font-size: 0.65em;
+}
+
+@media screen and (max-width: 768px) {
+    /* Your styles here */
+    .menuBtn{
+        display: none;
+    }
+    .navbarLeft{
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 2rem !important;
+        align-items: flex-start;
+    }
+    .searchBarCont{
+        flex: none;
+        width: 100%;
+    }
+    .navbarRight{display: none;}
+    .brandName{
+        font-size: 2.5rem;
+    }
+  }
